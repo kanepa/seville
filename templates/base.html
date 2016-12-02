@@ -1,0 +1,47 @@
+{% load static from staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Tilted Content Slideshow</title>
+		<meta name="description" content="Tilted Content Slideshow: Recreating the FWA.com landing page perspective slider" />
+		<meta name="keywords" content="fwa slider, perspective, 3d, slideshow, animation, web design" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="/static/css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="/static/css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="/static/css/component.css" />
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+		<script src="/static/js/modernizr.custom.js"></script>
+
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-7243260-2']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+
+	</head>
+	<body>
+
+             {% block content %}
+            {%  endblock  %}
+
+
+		<script src="/static/js/classie.js"></script>
+		<script src="/static/js/tiltSlider.js"></script>
+		<script>
+			new TiltSlider( document.getElementById( 'slideshow' ) );
+		</script>
+		<!-- For the demo ad only -->
+		<script src="http://tympanus.net/codrops/adpacks/demoad.js"></script>
+
+	</body>
+</html>
