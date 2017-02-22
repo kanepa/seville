@@ -1,0 +1,192 @@
+#players{
+    max-height: 400px;
+    max-width: 300px;
+}
+
+.section {
+  margin-bottom: 40px;
+}
+
+.section__title {
+  font-family: "Roboto Slab", serif;
+  font-size: 40px;
+}
+
+.section__content {
+  padding-left: 3px;
+}
+
+/**
+ * The cards
+ *
+ * Each card plays home to a front and back. I've set them up as squares here
+ * by using the padding technique, but you may set them up in any dimensions
+ * you like based on your site design.
+ */
+.card {
+  position: relative;
+  float: left;
+  padding-bottom: 25%;
+  width: 25%;
+  text-align: center;
+}
+
+.card:nth-child(1) {
+  margin-left: -3px;
+  margin-right: 1px;
+}
+
+.card:nth-child(2),
+.card:nth-child(3) {
+  margin-right: 1px;
+}
+
+/* card fronts and backs */
+.card__front,
+.card__back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#huns{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+.card__front,
+.card__back {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transition: -webkit-transform 0.3s;
+          transition: transform 0.3s;
+}
+
+.card__front {
+  background-color: #ff5078;
+}
+
+
+.card__back {
+  background-color: #1e1e1e;
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+}
+
+/* card text */
+/*.card__text {*/
+  /*display: inline-block;*/
+  /*position: absolute;*/
+  /*top: 0;*/
+  /*right: 0;*/
+  /*bottom: 0;*/
+  /*left: 0;*/
+  /*margin: auto;*/
+  /*height: 20px;*/
+  /*color: #fff;*/
+  /*font-family: "Roboto Slab", serif;*/
+  /*line-height: 20px;*/
+/*}*/
+
+
+
+
+/* click effect */
+.card.effect__click.flipped .card__front {
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+}
+
+.card.effect__click.flipped .card__back {
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+}
+
+
+
+
+* {
+  box-sizing: border-box;
+}
+html {
+  font-family: "Georgia", Sans-Serif;
+  font-size: 115%;
+  line-height: 1.5;
+}
+body, html {
+  margin: 0;
+}
+.main-nav {
+  background: lightyellow;
+}
+.main-nav > ul {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.main-nav > ul > li {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.nav-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.nav-list > li {
+  padding: 0 1.25rem 0 0.25rem;
+  position: relative;
+}
+.nav-list > li > a {
+  text-decoration: none;
+  color: #43b88c;
+  display: block;
+  padding: 0.5rem;
+  white-space: nowrap;
+}
+.nav-list > li > a:hover {
+  color: black;
+}
+
+.submenu-toggle-button {
+  position: absolute;
+  right: 0.7rem;
+  top: 0.7rem;
+}
+
+.submenu {
+  max-height: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  overflow: hidden;
+  width: 100%;
+  padding-left: 1.5rem;
+}
+.submenu.open {
+  max-height: 200px;
+}
+
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+main {
+  padding: 2rem;
+}
+main p {
+  margin: 0 0 1rem 0;
+}

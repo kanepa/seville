@@ -4,7 +4,7 @@
  *
  * Licensed under the MIT license.
  * http://www.opensource.org/licenses/mit-license.php
- * 
+ *
  * Copyright 2014, Codrops
  * http://www.codrops.com
  */
@@ -28,7 +28,7 @@
 		return (computedStyle === val);
 	});
 
-	var support = { 
+	var support = {
 			animations : Modernizr.cssanimations,
 			preserve3d : Modernizr.csstransformspreserve3d,
 			transforms3d : Modernizr.csstransforms3d
@@ -44,7 +44,7 @@
 		animEndEventName = animEndEventNames[ Modernizr.prefixed( 'animation' ) ];
 
 	function extend( a, b ) {
-		for( var key in b ) { 
+		for( var key in b ) {
 			if( b.hasOwnProperty( key ) ) {
 				a[key] = b[key];
 			}
@@ -128,7 +128,7 @@
 
 		var cntAnims = 0,
 			// the number of elements that actually animate inside the current item
-			animElemsCurrentCount = currentItem.querySelector( '.tiltview' ).children.length, 
+			animElemsCurrentCount = currentItem.querySelector( '.tiltview' ).children.length,
 			// the number of elements that actually animate inside the next item
 			animElemsNextCount = nextItem.querySelector( '.tiltview' ).children.length,
 			// keep track of the number of animations that are terminated
@@ -148,7 +148,7 @@
 					classie.removeClass( currentItem, 'current' );
 					isFinished();
 				};
-					
+
 				if( !isSupported ) {
 					endFn();
 				}
