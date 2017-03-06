@@ -20,9 +20,9 @@ from django.contrib.staticfiles import views as static_views
 
 urlpatterns = [
     url(r'^admin/', include( admin.site.urls)),
-    url(r'^$', views.get_index),
-    url(r'^front/', views.get_front),
-    url(r'^cards/', views.get_cards),
-    url(r'^quiz/', views.get_quiz),
+    url(r'^$', views.get_index, name='home'),
+    url(r'^front/', views.get_front, name='front'),
+    url(r'^cards/', views.get_cards, name='cards'),
+    url(r'^quiz/', views.get_quiz, name='quiz'),
     url(r'^static/(?P<path>.*)$', static_views.serve),
 ]
