@@ -87,8 +87,8 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
     <script src="{%static 'js/bootstrap.min.js' %}"></script>
 
 
-    <script src="/static/js/classie.js"></script>
-		<script src="/static/js/tiltSlider.js"></script>
+    <script src="{% static 'js/classie.js' %}"></script>
+		<script src="{% static 'js/tiltSlider.js' %}" ></script>
 		<script>
 			new TiltSlider( document.getElementById( 'slideshow' ) );
 		</script>
