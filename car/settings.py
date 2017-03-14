@@ -28,7 +28,7 @@ SECRET_KEY = os.getenv('DJANGO_SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 
 
-ALLOWED_HOSTS = ['headintheclouds.herokuapp.com']
+ALLOWED_HOSTS = ['seville.herokuapp.com']
 
 SITE_ID = 1
 
