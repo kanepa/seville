@@ -28,6 +28,8 @@
 
 {#<body>#}
 {% extends 'base.html' %}
+
+{%  load static from staticfiles  %}
 {#<body>#}
 {% block content %}
     <!-- Navigation -->
@@ -83,7 +85,7 @@
         <div class="row">
             <div class="crop col-md-4 portfolio-item" >
                 <a href="#">
-                    <img class="img-responsive" id="players" src="/static/img/rab.jpg" alt="">
+                    <img class="img-responsive" id="players" src="{% static 'img/rab.jpg' %}" alt="">
                 </a>
                 <h3>
                     <a href="#">Project Name</a>
@@ -92,7 +94,7 @@
             </div>
             <div class="col-md-4 portfolio-item">
                 <a href="#">
-                    <img class="img-responsive" id="players"  src="/static/img/joos.jpg" alt="">
+                    <img class="img-responsive" id="players"  src="{% static 'img/joos.jpg' %}" alt="">
                 </a>
                 <h3>
                     <a href="#">Project Name</a>
@@ -101,7 +103,7 @@
             </div>
             <div class="col-md-4 portfolio-item">
                 <a href="#">
-                    <img class="img-responsive" id="players" src="/static/img/bobo.jpg" alt="">
+                    <img class="img-responsive" id="players" src="{% static 'img/bobo.jpg' %}" alt="">
                 </a>
                 <h3>
                     <a href="#">Project Name</a>
@@ -115,7 +117,7 @@
         <div class="row">
             <div class="col-md-4 portfolio-item">
                 <a href="#">
-                    <img class="img-responsive" src="/static/img/johan.jpg" alt="">
+                    <img class="img-responsive" src="{% static 'img/johan.jpg' %}" alt="">
                 </a>
                 <h3>
                     <a href="#">Project Name</a>
@@ -124,7 +126,7 @@
             </div>
             <div class="col-md-4 portfolio-item">
                 <a href="#">
-                    <img class="img-responsive" src="/static/img/agathe.jpg" alt="">
+                    <img class="img-responsive" src="{% static 'img/agathe.jpg' %}" alt="">
                 </a>
                 <h3>
                     <a href="#">Project Name</a>
@@ -133,7 +135,7 @@
             </div>
             <div class="col-md-4 portfolio-item">
                 <a href="#">
-                    <img class="img-responsive" src="/static/img/thompson.jpg" alt="">
+                    <img class="img-responsive" src="{% static 'img/thompson.jpg' %}" alt="">
                 </a>
                 <h3>
                     <a href="#">Project Name</a>

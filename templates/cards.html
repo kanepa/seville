@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{%  load static from staticfiles  %}
 
  {% block content %}
 
@@ -7,10 +8,10 @@
         <div class="section__content clearfix" id="huns">
           <div class="card effect__click">
             <div class="card__front">
-              <img src="/static/img/bobo.jpeg" width ="340px">
+              <img src="{% static 'img/bobo.jpeg' %}" width ="340px">
             </div>
             <div class="card__back">
-              <img src="/static/img/Bobostats.jpg">
+              <img src="{% static 'img/Bobostats.jpg' %}">
             </div>
           </div><!-- /card -->
 {#          <div class="card effect__click">#}
@@ -26,18 +27,18 @@
 {#          </div><!-- /card -->#}
           <div class="card effect__click">
             <div class="card__front">
-              <img src="/static/img/">
+              <img src="{%  static 'img'>
             </div>
             <div class="card__back">
-              <img src="/static/img/mjalby.jpg">
+              <img src="{% static 'img/mjalby.jpg' %}">
             </div>
           </div><!-- /card -->
           <div class="card effect__click">
             <div class="card__front">
-              <img src="/static/img/bobo1.jpg">
+              <img src="{% static 'img/bobo1.jpg' %}">
             </div>
             <div class="card__back">
-              <img src="/static/img/larsson.jpg">
+              <img src="{% static 'img/larsson.jpg' %}">
             </div>
           </div>
         </div><!-- /card -->
