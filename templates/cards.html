@@ -3,45 +3,49 @@
 
  {% block content %}
 
- <div class="section">
-        <h2 class="section__title">Players Stats</h2>
-        <div class="section__content clearfix" id="huns">
-          <div class="card effect__click">
-            <div class="card__front">
-              <img src="{% static 'img/bobo.jpeg' %}" width ="340px">
-            </div>
-            <div class="card__back">
-              <img src="{% static 'img/Bobostats.jpg' %}">
-            </div>
-          </div><!-- /card -->
-{#          <div class="card effect__click">#}
-{#            <div class="card__front">#}
-{#              <span class="card__text">front</span>#}
-{#              <img src="/static/img/joos.jpg">#}
-{#            </div>#}
-{#            </div>#}
-{#            <div class="card__back">#}
-{#              <span class="card__text">back</span>#}
-{#                <img src="/static/img/larsson.jpg">#}
-{#            </div>#}
-{#          </div><!-- /card -->#}
-          <div class="card effect__click">
-            <div class="card__front">
-              <img src="{%  static 'img'>
-            </div>
-            <div class="card__back">
-              <img src="{% static 'img/mjalby.jpg' %}">
-            </div>
-          </div><!-- /card -->
-          <div class="card effect__click">
-            <div class="card__front">
-              <img src="{% static 'img/bobo1.jpg' %}">
-            </div>
-            <div class="card__back">
-              <img src="{% static 'img/larsson.jpg' %}">
-            </div>
-          </div>
-        </div><!-- /card -->
-      </div><!-- /section -->
-
+     <div class="wrapper">
+ <div class="container col-md-4">
+     <div class="section">
+         <h2 class="section__title">Players Stats</h2>
+         <div class="section__content clearfix" id="huns">
+             <div class="card effect__click">
+                 <div class="card__front">
+                     <img src="{% static 'img/bobo.jpeg' %}" width="340px">
+                 </div>
+                 <div class="card__back">
+                     <img src="{% static 'img/Bobostats.jpg' %}">
+                 </div>
+             </div><!-- /card -->
+             {#          <div class="card effect__click">#}
+             {#            <div class="card__front">#}
+             {#              <span class="card__text">front</span>#}
+             {#              <img src="/static/img/joos.jpg">#}
+             {#            </div>#}
+             {#            </div>#}
+             {#            <div class="card__back">#}
+             {#              <span class="card__text">back</span>#}
+             {#                <img src="/static/img/larsson.jpg">#}
+             {#            </div>#}
+             {#          </div><!-- /card -->#}
+             {#          <div class="card effect__click">#}
+             {#            <div class="card__front">#}
+             {#              <img src="{%  static 'img/rab.jpg' %} ">#}
+             {#            </div>#}
+             {#            <div class="card__back">#}
+             {#              <img src="{% static 'img/mjalby.jpg' %}">#}
+             {#            </div>#}
+             {#          </div><!-- /card -->#}
+             {#          <div class="card effect__click">#}
+             {#            <div class="card__front">#}
+             {#              <img src="{% static 'img/bobo1.jpg' %}">#}
+             {#            </div>#}
+             {#            <div class="card__back">#}
+             {#              <img src="{% static 'img/larsson.jpg' %}">#}
+             {#            </div>#}
+             {#          </div>#}
+             {#        </div><!-- /card -->#}
+         </div><!-- /section -->
+     </div>
+ </div>
+ </div>
 {% endblock %}

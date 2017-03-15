@@ -81,10 +81,12 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga
         <script src=" {%  static 'js/stretch.js' %}"></script>
         <script src="{%  static 'js/quiz2.js' %}"></script>
 
-{#             <script src="/static/js/mine.js"></script>#}
+{#             <script src=#}
+{#            "{ % static 'js/mine.js' %}"></script>#}
 
     <!-- Bootstrap Core JavaScript -->
     <script src="{%static 'js/bootstrap.min.js' %}"></script>
+    <script src="{%static 'js/cards.js' %}"></script>
 
 
     <script src="{% static 'js/classie.js' %}"></script>

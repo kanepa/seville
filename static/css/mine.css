@@ -13,19 +13,13 @@
 }
 
 .section__content {
-  padding-left: 3px;
+    padding-left: 200px;
 }
 
-/**
- * The cards
- *
- * Each card plays home to a front and back. I've set them up as squares here
- * by using the padding technique, but you may set them up in any dimensions
- * you like based on your site design.
- */
+
 .card {
   position: relative;
-  float: left;
+  float: right;
   padding-bottom: 25%;
   width: 25%;
   text-align: center;
