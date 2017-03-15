@@ -1,7 +1,7 @@
 
 (function() {
   var questions = [{
-    question: "What year did Martin O'Neil join?",
+    question: "What year did Martin ?",
     choices: [1997, 2000, 2003, 2004, 2005],
     correctAnswer: 2
   }, {

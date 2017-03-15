@@ -1,27 +1,25 @@
-/**
- * Created by macbookpro on 01/03/2017.
- */
+
 (function() {
   var questions = [{
-    question: "What year did Martin O'Neil join?",
+    question: "What year did Martin O'Neil join Celtic?",
     choices: [1997, 2000, 2003, 2004, 2005],
     correctAnswer: 2
   }, {
-    question: "Who was the top scorer",
-    choices: [3, 6, 9, 12, 18],
-    correctAnswer: 4
-  }, {
-    question: "What is 8*9?",
-    choices: [72, 99, 108, 134, 156],
+    question: "Who was the top scorer in the 2003/2004 season ?",
+    choices: [" Larsson", " Sutton", " Petrov", " Hartson", " McStay"],
     correctAnswer: 0
   }, {
-    question: "What is 1*7?",
-    choices: [4, 5, 6, 7, 8],
+    question: "What was the name of the statium at the final",
+    choices: [" Estádio Do Drãgao", " Mestalla", " El Sardinero", " Olímpico de Sevilla", " Vicente Calderón"],
     correctAnswer: 3
   }, {
-    question: "What is 8*8?",
-    choices: [20, 30, 40, 50, 64],
-    correctAnswer: 4
+    question: "What team did Porto beat in the Semi final to reach the Final ? ",
+    choices: [" Liverpool", " Borussia Dortmund", " Lens", " Lazio", " PSV Eindhoven "],
+    correctAnswer: 3
+  }, {
+    question: "How many scots were in the squad?",
+    choices: ["  3","  4","  5","  6","   7"],
+    correctAnswer: 2
   }];
 var questionCounter = 0; //Tracks question number
   var selections = []; //Array containing user choices
